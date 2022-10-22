@@ -30,11 +30,12 @@
 ## Introduction
 
 This is the cdnmoe repository. If you want to send your static resource library to us, please contact us first, not fork and add our library.
-e-mail address: cdnmoe@mojy.xyz
+    
+E-mail address: cdnmoe@mojy.xyz
 
 ## Sponsors
 
-cdnmoe wouldn't be the success that it is today without our sponsors' kind support. These companies currently support cdnmoe:
+Cdnmoe wouldn't be the success that it is today without our sponsors' kind support. These companies currently support cdnmoe:
 
 <!-- * [Cloudflare](https://www.cloudflare.com/?utm_source=cdnmoe&utm_medium=link&utm_campaign=cdnmoe_readme) -->
 
