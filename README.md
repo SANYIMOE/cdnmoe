@@ -16,3 +16,30 @@
   <img src="https://img.shields.io/badge/GitHub-Discussions-brightgreen.svg?style=flat-square" alt="Discussions">
  </a>
 </p>
+
+---
+
+## Table of Contents
+
+* [Introduction](#introduction)
+<!--  * [Other Repositories](#other-repositories) -->
+<!-- * [Contributing](#contributing) -->
+* [Sponsors](#sponsors)
+* [License](#license)
+
+## Introduction
+
+This is the cdnmoe repository. If you want to send your static resource library to us, please contact us first, not fork and add our library.
+e-mail address: cdnmoe@mojy.xyz
+
+## Sponsors
+
+cdnmoe wouldn't be the success that it is today without our sponsors' kind support. These companies currently support cdnmoe:
+
+<!-- * [Cloudflare](https://www.cloudflare.com/?utm_source=cdnmoe&utm_medium=link&utm_campaign=cdnmoe_readme) -->
+
+If you are interested in becoming a sponsor, please feel free to contact us!
+
+## License
+
+Each library is released under its own license. This cdnmoe repository is published under [MIT license](LICENSE).
