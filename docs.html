@@ -1,81 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+  <head lang="cn">
+    <meta charset="UTF-8">
+    <title></title>
     <style>
-      *{
-        margin: 0;
-        padding: 0;
-      }
-      ul{
-        overflow: hidden;
-      }
-      ul li{
-        width: 100px;
-        height: 30px;
-        float: left;
-        border: 1px solid #000;
-        list-style: none;
-        border-right: none;
-        text-align: center;
-        line-height: 30px;
-        cursor: pointer;
-      }
-      ul li:last-child{
-        border-right: 1px solid #000000;
-      }
-      .box{
-        position: relative;
-      }
-      .box div{
-        width: 304px;
-        height: 300px;
-        position: absolute;
-        display: none;
-      }
-      .box div:first-child{
-        background-color: red;
-      }
-      .box div:nth-child(2){
-        background-color: blue;
-      }
-      .box div:last-child{
-        background-color: yellow;
-      }
-      .box .show{
-        display: block;
-      }
-      .box .hide{
-        display: none;
-      }
-      .click{
-        background-color: #ccc;
-      }
+        *{
+            padding:0;
+            margin:0;
+        }
+        .selectka {
+            width:500px;
+            height:400px;
+            margin:auto;
+            border:1px solid #09e1ff;
+        }
+        .left,.right{
+            float:left;
+            height:400px;
+        }
+        #menu{
+            text-align: center;
+            line-height: 80px;
+            font-size: 20px;
+            color:purple;
+        }
+        li{
+            list-style: none;
+        }
+        #menu>li{
+            width:100px;
+            height:80px;
+            border:1px dashed blueviolet;
+            box-sizing: border-box;
+        }
+        .right{
+            position: relative;
+            width:399px;
+            background: pink;
+            margin-left:1px;
+            text-align: center;
+            font-size: 100px;
+            line-height: 400px;
+
+        }
+
+        .right li{
+            position: absolute;
+            width:399px;
+            height:400px;
+            display: none;
+        }
     </style>
   </head>
   <body>
-    <ul>
-      <li class="click">red</li>
-      <li>blue</li>
-      <li>yellow</li>
-    </ul>
-    <div class="box">
-      <div class="show"></div>
-      <div></div>
-      <div></div>
+    <div class="selectka">
+      <div class="left">
+        <ul id="menu">
+          <li class="menulist">衣服</li>
+          <li class="menulist">美妆</li>
+          <li class="menulist">包包</li>
+          <li class="menulist">美食</li>
+          <li class="menulist">首饰</li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li class="numlist">衣服</li>
+          <li class="numlist">美妆</li>
+          <li class="numlist">包包</li>
+          <li class="numlist">美食</li>
+          <li class="numlist">首饰</li>
+        </ul>
+      </div>
     </div>
     <script>
-      var liAll = document.querySelectorAll('li');//获取要操作的元素
-      var divAll = document.querySelectorAll('.box div');//获取被操作的跟随元素
-      for (var i = 0;i<liAll.length;i++) { //for循环为每一个元素添加点击事件
-        liAll[i].index = i;    //作用域的问题，如果for循环使用let声明，则不需要该行代码
-        liAll[i].onclick = function () { 
-          for (var j = 0;j<liAll.length;j++) {
-            liAll[j].className = "";//修改被操作的元素
-            divAll[j].className = "hide";//将所有被操作的元素全部隐藏
+      var menu_list=document.getElementsByClassName("menulist");
+      var num_list=document.getElementsByClassName("numlist");
+      var moo=null;
+      var yuu=null;
+      for(var i=0;i<menu_list.length;i++) {
+        menu_list[i].index = i;
+        menu_list[i].onmouseenter = function () {
+          /* console.log(this.index);*/   //this.index 为当前目标的索引值
+          /* for(var k=0;k<num_list.length;k++){
+            num_list[k].style.display ="none";
           }
-          this.className = "click";//当前被点击的元素选中
-          divAll[this.index].className = "show";//将所有被操作的元素跟随显示
+            num_list[this.index].style.display ="block";
+          }*/
+          if(yuu)yuu.style.background ="none";
+          this.style.background ="yellow";
+          yuu=this;
+          if(moo)moo.style.display="none";
+          num_list[this.index].style.display = "block";
+          moo = num_list[this.index];
         }
       }
     </script>
