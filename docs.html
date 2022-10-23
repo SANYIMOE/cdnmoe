@@ -1,100 +1,64 @@
 <!DOCTYPE html>
-<html>
-  <head lang="cn">
+<html lang="cn">
+  <head>
     <meta charset="UTF-8">
-    <title></title>
     <style>
-        *{
-            padding:0;
-            margin:0;
-        }
-        .selectka {
-            width:500px;
-            height:400px;
-            margin:auto;
-            border:1px solid #09e1ff;
-        }
-        .left,.right{
-            float:left;
-            height:400px;
-        }
-        #menu{
-            text-align: center;
-            line-height: 80px;
-            font-size: 20px;
-            color:purple;
-        }
-        li{
-            list-style: none;
-        }
-        #menu>li{
-            width:100px;
-            height:80px;
-            border:1px dashed blueviolet;
-            box-sizing: border-box;
-        }
-        .right{
-            position: relative;
-            width:399px;
-            background: pink;
-            margin-left:1px;
-            text-align: center;
-            font-size: 100px;
-            line-height: 400px;
-
-        }
-
-        .right li{
-            position: absolute;
-            width:399px;
-            height:400px;
-            display: none;
-        }
+      *{
+        text-align: center;
+      }
+      nav li{
+        display: inline;
+        width: 24%;
+        text-decoration: none;
+        padding: 15px;
+      }
+      li:hover{
+        background-color: lightblue;
+      }
+      section{
+        height: 300px;
+      }
     </style>
   </head>
   <body>
-    <div class="selectka">
-      <div class="left">
-        <ul id="menu">
-          <li class="menulist">衣服</li>
-          <li class="menulist">美妆</li>
-          <li class="menulist">包包</li>
-          <li class="menulist">美食</li>
-          <li class="menulist">首饰</li>
-        </ul>
-      </div>
-      <div class="right">
-        <ul>
-          <li class="numlist">衣服</li>
-          <li class="numlist">美妆</li>
-          <li class="numlist">包包</li>
-          <li class="numlist">美食</li>
-          <li class="numlist">首饰</li>
-        </ul>
-      </div>
+    <!--导航栏部分HTML代码-->
+    <nav id="nav">
+      <ul>
+        <li class="act">选卡1</li>
+        <li>选卡2</li>
+        <li>选卡3</li>
+        <li>选卡4</li>
+      </ul>
+    </nav>
+    <!--内容部分HTML代码-->
+    <div id="container">
+      <section class="tab" style="background-color: tomato">内容1</section>
+      <section class="tab" style="background-color: cyan">内容2</section>
+      <section class="tab" style="background-color: blueviolet">内容3</section>
+      <section class="tab" style="background-color: gold">内容4</section>
     </div>
     <script>
-      var menu_list=document.getElementsByClassName("menulist");
-      var num_list=document.getElementsByClassName("numlist");
-      var moo=null;
-      var yuu=null;
-      for(var i=0;i<menu_list.length;i++) {
-        menu_list[i].index = i;
-        menu_list[i].onmouseenter = function () {
-          /* console.log(this.index);*/   //this.index 为当前目标的索引值
-          /* for(var k=0;k<num_list.length;k++){
-            num_list[k].style.display ="none";
+      window.onload=function () {
+        var nav=document.getElementById('nav');
+        var oNav=nav.getElementsByTagName('li');
+        var container=document.getElementById('container');
+        var oDiv=container.getElementsByClassName('tab');
+        for(var i=0;i<oNav.length;i++){
+          oNav[i].index=i;
+          oNav[i].onclick=function () {
+            for(var i=0;i<oNav.length;i++){
+              oNav[i].className='';
+              oDiv[i].style.display="none";
+            }
+            this.className='act';
+            oDiv[this.index].style.display="block"
+ }
+          for(var m=1;m<oNav.length;m++){
+            oNav[m].className='';
+            oDiv[m].style.display="none";
           }
-            num_list[this.index].style.display ="block";
-          }*/
-          if(yuu)yuu.style.background ="none";
-          this.style.background ="yellow";
-          yuu=this;
-          if(moo)moo.style.display="none";
-          num_list[this.index].style.display = "block";
-          moo = num_list[this.index];
         }
-      }
+      };
     </script>
   </body>
 </html>
