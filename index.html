@@ -16,6 +16,12 @@
 		<meta content="/favicon.ico" property="og:image">
 		<meta content="/favicon.ico" property="og:image:secure_url">
 		<title>CDNMOE - 免費, 高速, 可靠, 可愛的開源前端靜態資源服務</title>
+		<script>
+			var host = window.location.host;
+			if (host != "cdnmoe.mojy.xyz") {
+				location.href = "https://cdnmoe.mojy.xyz";
+			}
+		</script>
 		<!-- <link href="https://cdn.cdnmoe.mojy.xyz/" rel="dns-prefetch"> -->
 		<!-- <link href="https://fonts.gstatic.com/" rel="dns-prefetch"> -->
 		<!-- <link href="https://data.jsdelivr.com/" rel="dns-prefetch"> -->
@@ -303,11 +309,5 @@
 			gtag('config', 'UA-31822709-1');
 		</script>
 		<script src="/static/js/snow.js"></script>
-		<script>
-			var host = window.location.host;
-			if (host != "cdnmoe.mojy.xyz") {
-				location.href = "https://cdnmoe.mojy.xyz";
-			}
-		</script>
 	</body>
 </html>
