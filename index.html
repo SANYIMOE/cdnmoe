@@ -29,7 +29,7 @@
 		<!-- <link crossorigin="anonymous" href="https://fonts.gstatic.com/" rel="preconnect"> -->
 		<link rel="stylesheet" href="/static/css/app.css">
 		<link onload="this.media='all'" media="print" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&amp;display=swap" rel="stylesheet">
-		<link onload="this.media='all'" media="print" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link onload="this.media='all'" media="print" href="/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link type="application/xml" href="/sitemap/index.xml" rel="sitemap">
 	</head>
 	<body>
@@ -51,12 +51,12 @@
 							</div>
 							<div class="collapse navbar-collapse" id="main-navbar">
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="/features">Features</a></li>
-									<li><a href="/network">Network</a></li>
-									<li><a href="/statistics">Stats</a></li>
-									<li><a href="/sponsors">Sponsors</a></li>
-									<li class="dropdown">
-										<a class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown">Tools <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<li><a href="/features">精選</a></li>
+									<li><a href="/network">網絡</a></li>
+									<li><a href="/statistics">統計</a></li>
+									<li><a href="/sponsors">贊助商</a></li>
+									<!-- li class="dropdown">
+										<a class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown">工具 <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 										<ul class="dropdown-menu">
 											<li><a href="/tools/debug">Debug tool</a></li>
 											<li><a href="/tools/purge">Purge cache</a></li>
@@ -67,7 +67,7 @@
 											<li><a href="/rawgit">RawGit</a></li>
 											<li><a href="/unpkg">unpkg</a></li>
 										</ul>
-									</li>
+									</li> -->
 									<li><a class="featured" title="GitHub" href="https://github.com/SANYIMOE/cdnmoe" rel="noopener" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
@@ -92,9 +92,11 @@
 								<section class="docs">
 									<div class="row">
 										<div class="col-md-3 docs-tabs">
-											<div class="docs-tab"><a class="active"><img title="CDN for npm" height="39" width="100" src="img/npm.png" srcset="img/npm%402x.png 2x"></a></div>
-											<div class="docs-tab"><a class=""><img title="CDN for GitHub" height="27" width="100" src="img/github.png" srcset="img/github%402x.png 2x"></a></div>
-											<div class="docs-tab"><a class=""><img title="CDN for WordPress" height="62" width="100" src="img/wordpress.png" srcset="img/wordpress%402x.png 2x"></a></div>
+											<div class="docs-tab"><a class="active"><img title="CDN for npm, Based by unpkg" height="39" width="100" src="img/npm.png" srcset="img/npm%402x.png 2x"></a></div>
+											<div class="docs-tab"><a class="active"><img title="CDN for npm, Based by jsDelivr" height="39" width="100" src="img/npm.png" srcset="img/npm%402x.png 2x"></a></div>
+											<div class="docs-tab"><a class="active"><img title="CDN for cdnjs" height="39" width="100" src="img/npm.png" srcset="img/npm%402x.png 2x"></a></div>
+											<div class="docs-tab"><a class=""><img title="CDN for GitHub, Based by jsDelivr" height="27" width="100" src="img/github.png" srcset="img/github%402x.png 2x"></a></div>
+											<div class="docs-tab"><a class=""><img title="CDN for WordPress, Based by jsDelivr" height="62" width="100" src="img/wordpress.png" srcset="img/wordpress%402x.png 2x"></a></div>
 											<div class="active-tab-arrow" style="top: 16.666666666666668%;"></div></div>
 										<div class="col-md-9 docs-code">
 											<div class="docs-code-bg">
@@ -134,13 +136,13 @@
 									</div>
 								</section>
 								<section class="sponsors">
-									<div class="sponsors-text">jsDelivr operates thanks to our main sponsors:</div>
-									<div class="sponsor"><a href="https://www.cloudflare.com" rel="noopener" target="_blank"><img title="Sponsored by Cloudflare" height="50" width="149" src="img/cloudflare.png" srcset="img/cloudflare%402x.png 2x"></a></div>
+									<div class="sponsors-text">SANYIMOE CDNMOE感謝下面主要贊助商:</div>
+									<!-- <div class="sponsor"><a href="https://www.cloudflare.com" rel="noopener" target="_blank"><img title="Sponsored by Cloudflare" height="50" width="149" src="img/cloudflare.png" srcset="img/cloudflare%402x.png 2x"></a></div>
 									<div class="sponsor"><a href="https://www.fastly.com" rel="noopener" target="_blank"><img title="Sponsored by Fastly" height="50" width="116" src="img/fastly.png" srcset="img/fastly%402x.png 2x"></a></div>
 									<div class="sponsor"><a href="https://ns1.com" rel="noopener" target="_blank"><img title="Sponsored by NS1" height="50" width="94" src="img/ns1.png" srcset="img/ns1%402x.png 2x"></a></div>
 									<div class="sponsor"><a href="https://www.quantil.com" rel="noopener" target="_blank"><img title="Sponsored by Quantil" height="50" width="131" src="img/quantil.png" srcset="img/quantil%402x.png 2x"></a></div>
 									<div class="sponsor"><a href="https://bunny.net" rel="noopener" target="_blank"><img title="Sponsored by bunny.net" height="50" width="172" src="img/bunny.png" srcset="img/bunny%402x.png 2x"></a></div>
-									<div class="sponsor"><a href="https://render.com/" rel="noopener" target="_blank"><img title="Sponsored by render.com" height="50" width="186" src="img/render.png" srcset="img/render%402x.png 2x"></a></div>
+									<div class="sponsor"><a href="https://render.com/" rel="noopener" target="_blank"><img title="Sponsored by render.com" height="50" width="186" src="img/render.png" srcset="img/render%402x.png 2x"></a></div> -->
 								</section>
 							</div>
 						</div>
