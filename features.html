@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="cn">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<meta name="description" content="支援NPM, GitHub, WordPress, Deno, CDNJS, 等更多。多種CDN且最高速的前端靜態資源服務。軟萌可愛的前端靜態資源服務。">
+		<meta content="cdn, npm, github, js, javascript, 免費, 開源, oss, deno, wordpress, CDNJS" name="keywords">
+		<meta content="zh_CN" property="og:locale">
+		<meta content="website" property="og:type">
+		<meta property="og:title" content="CDNMOE - 免費, 高速, 可靠, 可愛的開源前端靜態資源服務">
+		<meta property="og:description" content="支援NPM, GitHub, WordPress, Deno, CDNJS, 等更多。多種CDN且最高速的前端靜態資源服務。軟萌可愛的前端靜態資源服務。為生產使用而設計。">
+		<meta content="https://cdnmoe.mojy.xyz/" property="og:url">
+		<meta content="CDNMOE" property="og:site_name">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" sizes="any" mask="" href="favicon.ico">
+		<meta content="favicon.ico" property="og:image">
+		<meta content="favicon.ico" property="og:image:secure_url">
+		<title>精選 - CDNMOE</title>
+		<!-- <script>
+			var host = window.location.host;
+			if (host != "cdnmoe.mojy.xyz") {
+				location.href = "https://cdnmoe.mojy.xyz";
+			}
+		</script> -->
+		<link href="https://cdnmoe.mojy.xyz/" rel="dns-prefetch">
+		<link href="https://fonts.gstatic.com/" rel="dns-prefetch">
+		<link crossorigin="anonymous" href="https://cdnmoe.mojy.xyz/" rel="preconnect">
+		<link crossorigin="anonymous" href="https://fonts.gstatic.com/" rel="preconnect">
+		<link rel="stylesheet" href="static/css/app.css">
+		<link onload="this.media='all'" media="print" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&amp;display=swap" rel="stylesheet">
+		<link onload="this.media='all'" media="print" href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link type="application/xml" href="sitemap/index.xml" rel="sitemap">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="page">
+				<header class="c-header">
+					<nav class="navbar navbar-default">
+						<div class="container">
+							<div class="navbar-header">
+								<button class="navbar-toggle collapsed" aria-expanded="false" data-target="#main-navbar" data-toggle="collapse" type="button">
+									<span class="sr-only">切換導航</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="/"><img title="cdnmoe" height="45" width="86" src="static/img/cdnmoe-logo.webp"></a>
+							</div>
+							<div class="collapse navbar-collapse" id="main-navbar">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="features.html">精選</a></li>
+									<li><a href="network.html">網絡</a></li>
+									<li><a href="statistics.html">統計</a></li>
+									<li><a href="sponsors.html">贊助商</a></li>
+									<!-- <li class="dropdown">
+										<a class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown">工具 <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+										<ul class="dropdown-menu">
+											<li><a href="/tools/debug">Debug tool</a></li>
+											<li><a href="/tools/purge">Purge cache</a></li>
+											<li class="divider" role="separator"></li>
+											<li class="dropdown-header">Convert from</li>
+											<li><a href="/github">GitHub</a></li>
+											<li><a href="/google">Google Hosted Libraries</a></li>
+											<li><a href="/rawgit">RawGit</a></li>
+											<li><a href="/unpkg">unpkg</a></li>
+										</ul>
+									</li> -->
+									<li><a class="featured" title="GitHub" href="https://github.com/SANYIMOE/cdnmoe" rel="noopener" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+									<!-- <li><a class="featured" title="Twitter" href="" rel="noopener" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a class="featured router-ignore" title="Discord" href="" rel="noopener" target="_blank"><img class="fa" style="margin-top: -3px;" title="Discord" height="16" width="16" src="img/discord.svg"></a></li> -->
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</header>
+				<div class="p-features text-page">
+					<div class="container">
+						<h1 class="page-title">精選</h1>
+						<section>
+							<p>CDNMOE為cdnjs、npm、GitHub、WordPress挿件和其他幾個有特殊要求的項目提供鏡像。如果我們的常規端點對您的用例不起作用，請告訴<a href="mailto:cdnmoe@mojy.xyz">我們</a>，我們會解决一些問題！</p>
+							<p>如果您是套裝軟體作者，請查看<a href="features.html#publishing-packages">我們為套裝軟體作者提供的提示</a>，以便盡可能輕鬆地使用您的套裝軟體。</p>
+						</section>
+						
+						<section id="cdnjs">
+							<h2>cdnjs雲加速</h2>
+							<!-- <div class="alert alert-info"></div> -->
+							<p>加載cdnjs上承載的任何項目:</p>
+							<pre><code>https://cdnmoe.xiaolanabc.top/cj/ajax/libs/package/version/file</code></pre>
+							<p>加載檔案:</p>
+							<pre><code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/cj/ajax/libs/jquery/3.6.1/jquery.min.js">https://cdnmoe.xiaolanabc.top/cj/ajax/libs/jquery/3.6.1/jquery.min.js</a></code></pre>
+							<div class="alert alert-info">由於cdnjs不支持模糊版本的設定。 如果輸入了不精確的版本，則可能返回404錯誤。</div>
+						</section>
+						
+						<section id="npm-unpkg">
+							<h2>npm雲加速 by unpkg</h2>
+							<!-- <div class="alert alert-info"></div> -->
+							<p>加載npm上承載的任何項目:</p>
+							<pre><code>https://cdnmoe.xiaolanabc.top/npm/package@version/file</code></pre>
+							<p>加載檔案:</p>
+							<pre><code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/npm/jquery@3.6.1/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/npm/jquery@3.6.1/dist/jquery.min.js</a></code></pre>
+							<div class="alert alert-info">由於unpkg不支持模糊版本的設定。 如果輸入了不精確的版本，則可能返回404錯誤。</div>
+						</section>
+						
+						<section id="npm-jsDelivr">
+							<h2>npm雲加速 by jsDelivr</h2>
+							<!-- <div class="alert alert-info"></div> -->
+							<p>加載npm上承載的任何項目:</p>
+							<pre><code>https://cdnmoe.xiaolanabc.top/jdr/npm/package@version/file</code></pre>
+							<p>加載檔案的精確版本:</p>
+							<pre><code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3.6.1/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3.6.1/dist/jquery.min.js</a></code></pre>
+							<p id="alias">使用版本範圍而不是精確版本:</p>
+							<pre>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3/dist/jquery.min.js</a></code>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3.1/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3.1/dist/jquery.min.js</a></code>
+							</pre>
+							<div class="alert alert-info">如果您使用此功能，並且您請求的檔案在包的最新版本中不可用，則由於我們的版本回退功能，連結將繼續工作。 我們將繼續從舊版本的包中提供檔案，而不是出現404錯誤。</div>
+							<p>按標籤加載(不建議用於生產):</p>
+							<pre><code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@beta/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@beta/dist/jquery.min.js</a></code></pre>
+							<p id="default">完全省略版本或使用“最新”加載最新版本(不建議用於生產):</p>
+							<pre>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@latest/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@latest/dist/jquery.min.js</a></code>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery/dist/jquery.min.js</a></code>
+							</pre>
+							<div class="alert alert-warning">請求最新版本(與“最新主要版本”或“最新次要版本”相反)是危險的，因為主要版本通常都會有重大變化。 只有當你真的知道自己在做什麼時，才能這樣做。</div>
+							<p id="minify">將“.min”添加到任何JS/CSS檔案中，以獲得精簡版本-如果不存在，我們將為您生成它。 所有生成的檔案都帶有源映射，可以在開發過程中輕鬆使用:</p>
+							<pre><code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/github-markdown-css@2.4.1/github-markdown.min.css">https://cdnmoe.xiaolanabc.top/jdr/npm/github-markdown-css@2.4.1/github-markdown.min.css</a></code></pre>
+							<div class="alert alert-info">縮小一個大檔案可能需要幾秒鐘。但是，我們將所有生成的檔存入緩存中，囙此此延遲僅適用於前幾個請求。</div>
+							省略檔案路徑以獲取默認檔案(當前不推薦)。 此檔案始終縮小: 
+							<pre>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3.6.1">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3.6.1</a></code>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3</a></code>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery</a></code>
+							</pre>
+							<div class="alert alert-warning">如果默認檔案不直接位於包的根目錄中，則使用此功能可能會導致相對導入出現問題，例如源映射、影像或所請求檔案引用的字體檔案。</div>
+							<p>獲取目錄清單:</p>
+							<pre>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3.2.1/">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3.2.1/</a></code>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3.2.1/dist/">https://cdnmoe.xiaolanabc.top/jdr/npm/jquery@3.2.1/dist/</a></code>
+							</pre>
+						</section>
+						
+						<section id="github-jsDelivr">
+							<h2>GitHub雲加速 by jsDelivr</h2>
+							<div class="alert alert-warning">我們建議在支持cdnjs的項目中使用cdnjs，以獲得更好的用戶體驗。若項目不支持cdnjs，可先嘗試使用npm。而後再使用GitHub。</div>
+							<!-- <div class="alert alert-info"></div> -->
+							<p>加載任何GitHub版本、提交或分支:</p>
+							<pre><code>https://cdnmoe.xiaolanabc.top/jdr/gh/user/repo@version/file</code></pre>
+							<p>Load an exact version of a file:</p>
+							<pre>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3.6.1/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/jquery/jquery@3.6.1/dist/jquery.min.js</a></code>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/jquery/jquery@32b00373b3f42e5cdcb709df53f3b08b7184a944/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@32b00373b3f42e5cdcb709df53f3b08b7184a944/dist/jquery.min.js</a></code>
+							</pre>
+							<p>使用版本範圍而不是精確版本:</p>
+							<pre>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3.2/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3.2/dist/jquery.min.js</a></code>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3/dist/jquery.min.js</a></code>
+							</pre>
+							<div class="alert alert-info">如果您使用此功能，並且您請求的檔案在最新版本中不可用，則由於我們的版本回退功能，連結將繼續工作。 我們將繼續提供舊版本的檔案，而不是出現404錯誤。</div>
+							<p>完全省略版本或使用“最新”加載最新版本(不建議用於生產):</p>
+							<pre>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@latest/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@latest/dist/jquery.min.js</a></code>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery/dist/jquery.min.js">https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery/dist/jquery.min.js</a></code>
+							</pre>
+							<div class="alert alert-warning">請求最新版本(與“最新主要版本”或“最新次要版本”相反)是危險的，因為主要版本通常都會有重大變化。只有當你真的知道自己在做什麼時，才能這樣做。</div>
+							<p>將“.min”添加到任何JS/CSS檔案中，以獲得精簡版本-如果不存在，我們將為您生成它。 所有生成的檔案都帶有源映射，可以在開發過程中輕鬆使用:</p>
+							<pre><code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3.6.1/src/core.min.js">https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3.6.1/src/core.min.js</a></code></pre>
+							<div class="alert alert-info">縮小一個大檔案可能需要幾秒鐘。但是，我們將所有生成的檔存入緩存中，囙此此延遲僅適用於前幾個請求。</div>
+							<p>獲取目錄清單:</p>
+							<pre>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3.6.1/">https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3.6.1/</a></code>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3.6.1/dist/">https://cdnmoe.xiaolanabc.top/jdr/gh/jquery/jquery@3.6.1/dist/</a></code>
+							</pre>
+						</section>
+						<section id="combine">
+							<h2>合併多個檔案</h2>
+							<p>我們的聯合端點允許您在一個請求中從npm和GitHub端點加載多個檔案:</p>
+							<pre><code>https://cdnmoe.xiaolanabc.top/jdr/combine/url1,url2,url3</code></pre>
+							<p>適用於單個檔案的所有功能(版本範圍、縮小等)也適用於此。 所有合併的檔案都帶有源映射，可以在開發過程中輕鬆使用。</p>
+							<pre>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/twbs/bootstrap@3.3/dist/js/bootstrap.min.js">https://cdnmoe.xiaolanabc.top/jdr/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/twbs/bootstrap@3.3/dist/js/bootstrap.min.js</a></code>
+								<code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/combine/npm/bootstrap@3.3/dist/css/bootstrap.min.css,npm/bootstrap@3.3/dist/css/bootstrap-theme.min.css">https://cdnmoe.xiaolanabc.top/jdr/combine/npm/bootstrap@3.3/dist/css/bootstrap.min.css,npm/bootstrap@3.3/dist/css/bootstrap-theme.min.css</a></code>
+							</pre>
+							<div class="alert alert-info">合併大/多檔案可能需要幾秒鐘。但是，我們將所有生成的檔存入緩存中，囙此此延遲僅適用於前幾個請求。</div>
+						</section>
+						<section id="wordpress-jsDelivr">
+							<h2>WordPress雲加速 by jsDelivr</h2>
+							<p>從WordPress加載任何挿件。org挿件SVN存儲庫:</p>
+							<pre><code>https://cdnmoe.xiaolanabc.top/jdr/wp/plugins/project/tags/version/file</code></pre>
+							<p>加載檔案的精確版本:</p>
+							<pre><code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/wp/plugins/wp-slimstat/tags/4.6.5/wp-slimstat.js">https://cdnmoe.xiaolanabc.top/jdr/wp/plugins/wp-slimstat/tags/4.6.5/wp-slimstat.js</a></code></pre>
+							<p>加載最新版本(不建議用於生產):</p>
+							<pre><code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/wp/plugins/wp-slimstat/trunk/wp-slimstat.js">https://cdnmoe.xiaolanabc.top/jdr/wp/plugins/wp-slimstat/trunk/wp-slimstat.js</a></code></pre>
+							<div class="alert alert-warning">請求最新版本是很危險的，因為新版本可能會帶來重大變化。 只有當你真的知道自己在做什麼時，才能這樣做。</div>
+							<p>從WordPress加載任何主題。 org主題SVN repo:</p>
+							<pre><code>https://cdnmoe.xiaolanabc.top/jdr/wp/themes/project/version/file</code></pre>
+							<p>加載檔案的精確版本:</p>
+							<pre><code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/wp/themes/twenty-eightteen/1.7/assets/js/html5.js">https://cdnmoe.xiaolanabc.top/jdr/wp/themes/twenty-eightteen/1.7/assets/js/html5.js</a></code></pre>
+							<p>將“.min”添加到任何JS/CSS檔案中，以獲得精簡版本-如果不存在，我們將為您生成它。 所有生成的檔案都帶有源映射，可以在開發過程中輕鬆使用:</p>
+							<pre><code><a target="_blank" href="https://cdnmoe.xiaolanabc.top/jdr/wp/themes/twenty-eightteen/1.7/assets/js/html5.min.js">https://cdnmoe.xiaolanabc.top/jdr/wp/themes/twenty-eightteen/1.7/assets/js/html5.min.js</a></code></pre>
+						</section>
+						<!-- <section id="custom"><h2>自定義終結點</h2>
+						<p>我們為以下項目提供自定義端點(如果您也需要，請聯繫我們):</p>
+						<ul>
+							<li><a target="_blank" rel="noopener" href="https://www.emojione.com">emojione.com</a></li>
+							<li><a target="_blank" rel="noopener" href="https://foundation.zurb.com">foundation.zurb.com</a></li>
+							<li><a target="_blank" rel="noopener" href="https://hex.pm">hex.pm</a></li> <li><a target="_blank" rel="noopener" href="https://jspm.io">jspm.io</a></li>
+							<li><a target="_blank" rel="noopener" href="https://www.webjars.org">webjars.org</a></li>
+						</ul>
+					</section> -->
+					<!-- <section id="publishing-packages">
+						<h2>套裝軟體作者提示</h2>
+						<ul>
+							<li>確保提供的檔案在瀏覽器中工作(使用UMD)</li>
+							<li>使用semver進行版本控制(這由npm強制執行，但不由GitHub強制執行)</li>
+							<li>如果分發縮小的JS/CSS檔案，還應包括這些檔案的源映射</li>
+							<li>如果你不想提供縮小的檔案，沒關係-我們會幫你處理的</li>
+							<li>如果分支/版本有不同的內容，因為一旦發佈到CDNMOE就無法更改</li>
+						</ul>
+						<strong>在 <code>package.json</code> 中配寘默認檔案</strong>
+						<p>對於npm上託管的包，我們支持為每個包設定一個“默認”檔案。 此檔案顯示在我們網站目錄清單的頂部，可在CDN上的較短URL下查看。 可以通過在 <code>package.json</code> 中設定以下欄位之一來配寘默認檔案 (按優先順序排序):</p>
+						<ol>
+							<li><code>cdnmoe</code></li>
+							<li><code>browser</code></li>
+							<li><code>main</code></li>
+						</ol>
+						<p>建議您必須在值中包含文件副檔名，例如:</p>
+						<pre>
+							<code>"main": "./index" // 這不起作用</code>
+							<code>"main": "./index.js" // 這是正確的方法</code>
+						</pre>
+					</section> -->
+				</div></div>
+			</div>
+			<div id="push"></div>
+			</div>
+				<footer class="c-footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="footer-text footer-text-big">設計, 開發, 維護:</div>
+								<div class="footer-text" style="margin-top: 15px;"><a class="footer-text" href="https://blog.mojy.xyz/" rel="noopener" target="_blank">Chihiro</a></div>
+							</div>
+							<div class="col-md-8">
+								<div class="footer-right">
+									<div>
+										<div class="footer-text footer-text-big awesome-companies">我們很棒的贊助商...</div>
+										<div><a class="btn btn-featured" href="sponsors.html">我們的贊助商</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="footer-row-2">
+								<div class="col-md-8">
+									<div class="footer-text">
+										<ul class="footer-list">
+											<li>© SANYIMOE, 2020-2022.</li>
+											<li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> 關於</a></li>
+											<li><a href="terms.html"><i class="fa fa-balance-scale"></i> 條款&政策</a></li>
+											<li><a href="mailto:cdnmoe@mojy.xyz"><i class="fa fa-envelope" aria-hidden="true"></i> cdnmoe@mojy.xyz</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+						<div class="col-md-8">
+						<div class="footer-text">
+							<!-- <ul class="footer-list">
+								<li>Convert from:</li>
+								<li><a href="/github">GitHub</a></li>
+								<li><a href="/google">Google Hosted Libraries</a></li>
+								<li><a href="/rawgit">RawGit</a></li> <li><a href="/unpkg">unpkg</a></li>
+							</ul> -->
+						</div>
+					</div>
+					<div class="col-md-4"><div class="footer-right"></div></div>
+				</div>
+			</div>
+			</footer>
+			<script src="static/js/jquery-3.5.1.min.js"></script>
+			<script src="static/js/bootstrap.min.js"></script>
+	</body>
+</html>
